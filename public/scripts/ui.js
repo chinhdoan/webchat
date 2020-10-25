@@ -9,12 +9,12 @@ class chatUI {
 	}
 
 	render(data) {
-		const when = dateFns.distanceInWordsToNow(data.created_at.toDate(), { addSuffix: true });
+		const cal = Math.floor(data.created_at.seconds / 1000);
 		const html = `
       <li class="list-group-item">
           <span class="username">${data.username}</span>
           <span class="message">${data.message}</span>
-          <div class="time">${when}</div>
+          <div class="time">${Math.floor(cal / 60 / 60 / 24 / 12) + " days"}</div>
       </li>
     `;
 
