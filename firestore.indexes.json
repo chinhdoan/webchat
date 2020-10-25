@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "chatDB",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "room",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
